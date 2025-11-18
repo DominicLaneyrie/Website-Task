@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Topics</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      padding: 30px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .topic-box {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .topic-box:hover {
+      transform: scale(1.05);
+      background-color: #e6f2ff;
+    }
+    .topic-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    .back-link {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0;
+      padding: 12px 20px;
+      background: #2196F3;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .back-link:hover {
+      background: #0b7dda;
+    }
+  </style>
+</head>
+<body>
+  <h2>Choose a Topic</h2>
+  <div class="grid">
+    {% for topic in topics %}
+      <a href="{{ url_for('view_topic', topic_id=topic.id) }}" class="topic-box">
+        <div class="topic-title">{{ topic.title }}</div>
+      </a>
+    {% endfor %}
+  </div>
+
+  <!-- ✅ Back to Dashboard button -->
+  <a href="{{ url_for('dashboard') }}" class="back-link">← Back to Dashboard</a>
+</body>
+</html>

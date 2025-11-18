@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+  .hero {
+    background: linear-gradient(90deg,#1babd8 0%,#4facfe 100%);
+    color: white; padding: 28px; border-radius: 10px; box-shadow: 0 6px 18px rgba(27,171,216,0.18); margin-bottom: 18px;
+  }
+  .hero h1 { margin: 0 0 6px 0; font-size: 26px; }
+  .hero p { margin: 0; opacity: 0.95; }
+
+  .controls { display:flex; gap:10px; margin: 14px 0 20px; align-items:center; }
+  .controls input[type="search"]{ flex:1; padding:10px 12px; border-radius:8px; border:1px solid #d0eaf6; box-shadow: inset 0 1px 0 rgba(255,255,255,0.6); }
+  .controls button{ padding:10px 14px; border-radius:8px; border:none; background:#1babd8; color:white; cursor:pointer; }
+
+  .layout { display:grid; grid-template-columns: 1fr 320px; gap:18px; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } .sidebar { order: 2; } }
+
+  .card { background:white; border-radius:10px; padding:12px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+  #map { height: 600px; border-radius:8px; }
+
+  .sidebar { max-height:600px; overflow:auto; padding:8px; }
+  .loc-item { padding:10px; border-radius:8px; margin-bottom:8px; background:#f7fbff; cursor:pointer; border:1px solid #e6f6ff; }
+  .loc-item:hover { background:#e6f6ff; }
+  .loc-title { font-weight:700; color:#0b6b8f; }
+  .loc-meta { font-size:13px; color:#556; margin-top:6px; }
+  .muted { color:#7b909b; font-size:13px; }
+</style>
+
+<div class="hero card">
+  <h1>Library Map</h1>
+  <p>Interactive map of nearby libraries and study spaces. Click a marker or an item to view details.</p>
+</div>
+
+<div class="controls">
+  <input id="search" type="search" placeholder="Search libraries by name or suburb..." aria-label="Search locations">
+  <button id="resetBtn">Reset</button>
+</div>
+
+<div class="layout">
+  <div class="card">
+    <div id="map"></div>
+  </div>
+
+  <div class="card sidebar">
+    <h3 style="margin-top:0">Locations</h3>
+    <div id="list"></div>
+    <div id="no-results" class="muted" style="display:none; margin-top:12px">No matching locations.</div>
+  </div>
+</div>
+
+<!-- Leaflet scripts -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize map
+  var map = L.map('map').setView([-27.47, 153.02], 12);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
+
+  // Helpers
+  function esc(s){ if(!s&&s!==0) return ''; return String(s).replace(/[&<>\"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[c]; }); }
+
+  var allMarkers = []; // { marker, data }
+  var listEl = document.getElementById('list');
+  var bounds = [];
+
+  function addLocation(loc){
+    var lat = parseFloat(loc.lat);
+    var lon = parseFloat(loc.lon);
+    if(!isFinite(lat)||!isFinite(lon)) return null;
+
+    var marker = L.marker([lat, lon]);
+
+    var popup = '<div style="min-width:220px">';
+    popup += '<strong>' + esc(loc.name || 'Unknown') + '</strong><br/>';
+    if(loc.address) popup += esc(loc.address) + '<br/>';
+    if(loc.hours) popup += '<div style="margin-top:6px"><strong>Hours:</strong> ' + esc(loc.hours) + '</div>';
+    popup += '<div style="margin-top:6px; font-size:13px; color:#444">';
+    if(loc.wheelchair_accessible) popup += '<div><strong>Wheelchair:</strong> ' + esc(loc.wheelchair_accessible) + '</div>';
+    if(loc.meeting_rooms) popup += '<div><strong>Meeting rooms:</strong> ' + esc(loc.meeting_rooms) + '</div>';
+    if(loc.website) popup += '<div style="margin-top:6px"><a href="' + esc(loc.website) + '" target="_blank" rel="noopener">Visit website</a></div>';
+    popup += '</div>';
+    popup += '</div>';
+
+    marker.bindPopup(popup);
+    marker.addTo(map);
+
+    // create list item
+    var item = document.createElement('div');
+    item.className = 'loc-item';
+    var title = document.createElement('div'); title.className = 'loc-title'; title.textContent = loc.name || 'Unknown';
+    var meta = document.createElement('div'); meta.className = 'loc-meta'; meta.textContent = loc.address || '';
+    item.appendChild(title); item.appendChild(meta);
+
+    item.addEventListener('click', function(){
+      map.setView([lat, lon], 15, { animate:true });
+      marker.openPopup();
+    });
+
+    listEl.appendChild(item);
+
+    allMarkers.push({ marker: marker, el: item, data: loc });
+    bounds.push([lat, lon]);
+    return marker;
+  }
+
+  // Load data and populate map + list
+  fetch("{{ url_for('api_locations_full') }}")
+    .then(r => r.json())
+    .then(data => {
+      data.forEach(addLocation);
+      // fit bounds
+      if(bounds.length>0){
+        try{ map.fitBounds(bounds, {padding:[40,40]}); }catch(e){ console.warn('fitBounds', e); }
+      }
+    })
+    .catch(err => console.error('Map load error', err));
+
+  // Search/filter
+  var search = document.getElementById('search');
+  var noResults = document.getElementById('no-results');
+  function applyFilter(){
+    var q = (search.value || '').toLowerCase().trim();
+    var visible = 0;
+    allMarkers.forEach(obj => {
+      var name = (obj.data.name||'').toLowerCase();
+      var addr = (obj.data.address||'').toLowerCase();
+      var match = !q || name.indexOf(q)!==-1 || addr.indexOf(q)!==-1;
+      if(match){
+        if(!map.hasLayer(obj.marker)) obj.marker.addTo(map);
+        obj.el.style.display = '';
+        visible++;
+      } else {
+        if(map.hasLayer(obj.marker)) map.removeLayer(obj.marker);
+        obj.el.style.display = 'none';
+      }
+    });
+    noResults.style.display = visible? 'none' : '';
+    // adjust bounds to visible markers
+    var visBounds = allMarkers.filter(o => map.hasLayer(o.marker)).map(o => [o.marker.getLatLng().lat, o.marker.getLatLng().lng]);
+    if(visBounds.length>0){ try{ map.fitBounds(visBounds, {padding:[40,40]}); }catch(e){} }
+  }
+
+  search.addEventListener('input', applyFilter);
+  document.getElementById('resetBtn').addEventListener('click', function(){ search.value = ''; applyFilter(); });
+
+});
+</script>
+
+{% endblock %}

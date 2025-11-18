@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Study Helper</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
+    nav { background: #1babd8; padding: 10px; }
+    nav a, nav span { color: white; margin-right: 15px; text-decoration: none; }
+    main { padding: 20px; max-width: 800px; margin: auto; }
+    h1, h2 { color: #333; }
+    form input, form textarea, form button {
+      display: block; margin: 10px 0; padding: 8px; width: 100%; max-width: 400px;
+    }
+    form button { background: #1babd8; color: white; border: none; cursor: pointer; }
+    ul { list-style: none; padding: 0; }
+    ul li { background: white; margin: 5px 0; padding: 10px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="{{ url_for('index') }}">Home</a>
+  <a href="{{ url_for('topics') }}">Topics</a>
+  <a href="{{ url_for('notes') }}">My Notes</a>
+  <a href="{{ url_for('locations') }}">Locations</a>
+  {% if session.get('user_id') %}
+    <span>Logged in</span>
+  {% else %}
+    <a href="{{ url_for('login') }}">Login</a>
+    <a href="{{ url_for('register') }}">Register</a>
+  {% endif %}
+</nav>
+<main>
+  {% block content %}{% endblock %}
+</main>
+</body>
+</html>

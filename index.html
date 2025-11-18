@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Study Helper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+    a.button {
+      text-decoration: none;
+      background: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Study Helper</h1>
+  <div class="button-container">
+    <a href="{{ url_for('login') }}" class="button">Login</a>
+    <a href="{{ url_for('register') }}" class="button">Register</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,364 @@
+[
+  {
+    "name": "Annerley Library",
+    "lat": -27.509341,
+    "lng": 153.03331,
+    "address": "450 Ipswich Rd, Annerley",
+    "hours": "Mon: 10am-5pm; Tue: 10am-5pm; Wed: closed; Thu: closed; Fri: 10am-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Limited, phone for info",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/annerley-library"
+  },
+  {
+    "name": "Ashgrove Library",
+    "lat": -27.443876,
+    "lng": 152.987086,
+    "address": "87 Amarina Ave, Ashgrove",
+    "hours": "Mon: 10am-6pm; Tue: 10am-8pm; Wed: 10am-6pm; Thu: 10am-8pm; Fri: 10am-6pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/ashgrove-library"
+  },
+  {
+    "name": "Banyo Library",
+    "lat": -27.374391,
+    "lng": 153.078259,
+    "address": "284 St Vincents Rd, Banyo",
+    "hours": "Mon: closed; Tue: 12pm-6pm; Wed: 10am-5pm; Thu: 10am-6pm; Fri: 12pm-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/banyo-library"
+  },
+  {
+    "name": "Bracken Ridge Library",
+    "lat": -27.317963,
+    "lng": 153.037889,
+    "address": "Cnr Bracken and Barrett Street, Bracken Ridge",
+    "hours": "Mon: closed; Tue: 10am-8pm; Wed: 10am-8pm; Thu: 10am-6pm; Fri: 10am-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/bracken-ridge-library"
+  },
+  {
+    "name": "Brisbane Square Library",
+    "lat": -27.470824,
+    "lng": 153.022451,
+    "address": "266 George St, Brisbane City",
+    "hours": "Mon: 9am-6pm; Tue: 9am-6pm; Wed: 9am-6pm; Thu: 9am-6pm; Fri: 9am-7pm; Sat: 9am-4pm; Sun: 10am-3pm; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/brisbane-square-library"
+  },
+  {
+    "name": "Bulimba Library",
+    "lat": -27.452075,
+    "lng": 153.062858,
+    "address": "Cnr Riding Rd & Oxford St, Bulimba",
+    "hours": "Mon: closed; Tue: 9am-5pm; Wed: 1pm-8pm; Thu: 9am-5pm; Fri: 9am-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Limited, phone for info",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/bulimba-library"
+  },
+  {
+    "name": "Carina Library",
+    "lat": -27.493284,
+    "lng": 153.09006,
+    "address": "Cnr Mayfield Rd & Nyrang St, Carina",
+    "hours": "Mon: 10am-6pm; Tue: 10am-6pm; Wed: closed; Thu: closed; Fri: 10am-6pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/carina-library"
+  },
+  {
+    "name": "Carindale Library",
+    "lat": -27.50134,
+    "lng": 153.102746,
+    "address": "Westfield Carindale, 1151 Creek Road, Carindale",
+    "hours": "Mon: 9am-5.30pm; Tue: 9am-5.30pm; Wed: 9am-5.30pm; Thu: 9am-8pm; Fri: 9am-5.30pm; Sat: 9am-4pm; Sun: 10am-4pm; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/carindale-library"
+  },
+  {
+    "name": "Chermside Library",
+    "lat": -27.386161,
+    "lng": 153.034879,
+    "address": "375 Hamilton Rd, Chermside",
+    "hours": "Mon: 9am-6pm; Tue: 9am-8pm; Wed: 9am-6pm; Thu: 9am-8pm; Fri: 9am-6pm; Sat: 9am-4pm; Sun: 10am-4pm; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/chermside-library"
+  },
+  {
+    "name": "Coopers Plains Library",
+    "lat": -27.564998,
+    "lng": 153.039658,
+    "address": "107 Orange Grove Rd, Coopers Plains",
+    "hours": "Mon: closed; Tue: 10am-5pm; Wed: 10am-8pm; Thu: 10am-5pm; Fri: 10am-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/coopers-plains-library"
+  },
+  {
+    "name": "Corinda Library",
+    "lat": -27.53886,
+    "lng": 152.981475,
+    "address": "641 Oxley Rd, Corinda",
+    "hours": "Mon: closed; Tue: 10am-5pm; Wed: 10am-5pm; Thu: 10am-5pm; Fri: 10am-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/corinda-library"
+  },
+  {
+    "name": "Darra Library",
+    "lat": -27.551987,
+    "lng": 152.927945,
+    "address": "6-10 School Rd, Darra",
+    "hours": "Mon: closed; Tue: 10am-5pm; Wed: 10am-5pm; Thu: 10am-5pm; Fri: 10am-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/darra-library"
+  },
+  {
+    "name": "Deagon Library",
+    "lat": -27.315354,
+    "lng": 153.085432,
+    "address": "7 Brahminy St, Deagon",
+    "hours": "Mon: closed; Tue: 10am-5pm; Wed: 10am-5pm; Thu: 10am-5pm; Fri: 10am-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/deagon-library"
+  },
+  {
+    "name": "Dorrington Library",
+    "lat": -27.446981,
+    "lng": 153.023869,
+    "address": "1 Dorrington Rd, Taringa",
+    "hours": "Mon: 10am-6pm; Tue: 10am-6pm; Wed: 10am-6pm; Thu: 10am-8pm; Fri: 10am-6pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/dorrington-library"
+  },
+  {
+    "name": "Eagle Farm Library",
+    "lat": -27.417982,
+    "lng": 153.094321,
+    "address": "1150 Kingsford Smith Dr, Eagle Farm",
+    "hours": "Mon: closed; Tue: 10am-5pm; Wed: 10am-5pm; Thu: 10am-5pm; Fri: 10am-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/eagle-farm-library"
+  },
+  {
+    "name": "Enoggera Library",
+    "lat": -27.435768,
+    "lng": 152.976412,
+    "address": "55 Trundle St, Enoggera",
+    "hours": "Mon: closed; Tue: 10am-5pm; Wed: 10am-5pm; Thu: 10am-8pm; Fri: 10am-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/enoggera-library"
+  },
+  {
+    "name": "Forest Lake Library",
+    "lat": -27.623548,
+    "lng": 152.901238,
+    "address": "1 Meadowlands Blvd, Forest Lake",
+    "hours": "Mon: 10am-6pm; Tue: 10am-8pm; Wed: 10am-6pm; Thu: 10am-8pm; Fri: 10am-6pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/forest-lake-library"
+  },
+  {
+    "name": "Fortitude Valley Library",
+    "lat": -27.454312,
+    "lng": 153.038741,
+    "address": "349 Brunswick St, Fortitude Valley",
+    "hours": "Mon: 10am-6pm; Tue: 10am-8pm; Wed: 10am-6pm; Thu: 10am-8pm; Fri: 10am-6pm; Sat: 9am-4pm; Sun: 10am-3pm; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/fortitude-valley-library"
+  },
+  {
+    "name": "Gordon Park Library",
+    "lat": -27.423862,
+    "lng": 153.022531,
+    "address": "87 Days Rd, Gordon Park",
+    "hours": "Mon: closed; Tue: 10am-5pm; Wed: 10am-8pm; Thu: 10am-5pm; Fri: 10am-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/gordon-park-library"
+  },
+  {
+    "name": "Hamilton Library",
+    "lat": -27.435124,
+    "lng": 153.053456,
+    "address": "51 Rossiter Parade, Hamilton",
+    "hours": "Mon: closed; Tue: 10am-5pm; Wed: 10am-5pm; Thu: 10am-5pm; Fri: 10am-5pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/hamilton-library"
+  },
+  {
+    "name": "Inala Library",
+    "lat": -27.540342,
+    "lng": 152.989761,
+    "address": "2 Inala Civic Centre, Inala",
+    "hours": "Mon: 10am-6pm; Tue: 10am-8pm; Wed: 10am-6pm; Thu: 10am-8pm; Fri: 10am-6pm; Sat: 9am-4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/inala-library"
+  },
+  {
+    "name": "Indooroopilly Library",
+    "lat": -27.499591,
+    "lng": 152.972642,
+    "address": "Indooroopilly Shopping Centre, Level 4, 322 Moggill Rd, Indooroopilly",
+    "hours": "Mon: 9am‑6pm; Tue: 9am‑8pm; Wed: 9am‑6pm; Thu: 9am‑8pm; Fri: 9am‑6pm; Sat: 9am‑4pm; Sun: 10am‑4pm; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/indooroopilly-library"
+  },
+  {
+    "name": "Kenmore Library",
+    "lat": -27.506033,
+    "lng": 152.938582,
+    "address": "Kenmore Village, 9 Brookfield Road, Kenmore",
+    "hours": "Mon: 9am‑6pm; Tue: 9am‑6pm; Wed: 9am‑6pm; Thu: 9am‑8pm; Fri: 9am‑6pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/kenmore-library"
+  },
+  {
+    "name": "Mitchelton Library",
+    "lat": -27.417127,
+    "lng": 152.97838,
+    "address": "37 Heliopolis Pde, Mitchelton",
+    "hours": "Mon: closed; Tue: 10am‑5pm; Wed: 10am‑5pm; Thu: 12 noon‑7pm; Fri: 10am‑5pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/mitchelton-library"
+  },
+  {
+    "name": "Mt Coot‑tha Library",
+    "lat": -27.475596,
+    "lng": 152.976014,
+    "address": "Brisbane Botanic Gardens, Mt Coot‑tha Rd, Toowong",
+    "hours": "Mon: 10am‑3pm; Tue: 10am‑4pm; Wed: 10am‑4pm; Thu: 10am‑4pm; Fri: 10am‑3pm; Sat: 9am‑4pm; Sun: 10am‑3pm; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/mt-coot‑tha-library"
+  },
+  {
+    "name": "Mt Gravatt Library",
+    "lat": -27.538516,
+    "lng": 153.08026,
+    "address": "8 Creek Rd, Mt Gravatt",
+    "hours": "Mon: closed; Tue: 9am‑5pm; Wed: 9am‑5pm; Thu: 9am‑7pm; Fri: 9am‑5pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/mt-gravatt-library"
+  },
+  {
+    "name": "Mt Ommaney Library",
+    "lat": -27.548122,
+    "lng": 152.937895,
+    "address": "Mt Ommaney Shopping Centre, 171 Dandenong Rd, Mt Ommaney",
+    "hours": "Mon: closed; Tue: 9am‑6pm; Wed: 9am‑6pm; Thu: 9am‑8pm; Fri: 9am‑6pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/mt-ommaney-library"
+  },
+  {
+    "name": "New Farm Library",
+    "lat": -27.467304,
+    "lng": 153.049626,
+    "address": "135 Sydney St, New Farm",
+    "hours": "Mon: closed; Tue: 10am‑6pm; Wed: 10am‑6pm; Thu: 12 noon‑8pm; Fri: 10am‑5pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/new‑farm-library"
+  },
+  {
+    "name": "Nundah Library",
+    "lat": -27.40128,
+    "lng": 153.058329,
+    "address": "1 Bage St (via Primrose Lane), Nundah",
+    "hours": "Mon: closed; Tue: 10am‑6pm; Wed: 1pm‑7pm; Thu: 10am‑5pm; Fri: 10am‑5pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/nundah-library"
+  },
+  {
+    "name": "Sandgate Library",
+    "lat": -27.320585,
+    "lng": 153.070492,
+    "address": "Sandgate Town Hall, Seymour St, Sandgate",
+    "hours": "Mon: closed; Tue: 10am‑5pm; Wed: 10am‑6pm; Thu: 10am‑6pm; Fri: 12 noon‑5pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/sandgate-library"
+  },
+  {
+    "name": "Stones Corner Library",
+    "lat": -27.497906,
+    "lng": 153.043665,
+    "address": "280 Logan Rd, Stones Corner",
+    "hours": "Mon: closed; Tue: closed; Wed: 9am‑5pm; Thu: 9am‑5pm; Fri: 9am‑5pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/stones-corner-library"
+  },
+  {
+    "name": "Sunnybank Hills Library",
+    "lat": -27.609839,
+    "lng": 153.055842,
+    "address": "Sunnybank Hills Shoppingtown, Cnr Compton & Calam Rds, Sunnybank Hills",
+    "hours": "Mon: 9am‑6pm; Tue: 9am‑6pm; Wed: 9am‑6pm; Thu: 9am‑8pm; Fri: 9am‑6pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/sunnybank-hills-library"
+  },
+  {
+    "name": "Toowong Library",
+    "lat": -27.485753,
+    "lng": 152.99302,
+    "address": "Toowong Village Shopping Centre, 9 Sherwood Rd, Toowong",
+    "hours": "Mon: 9am‑5.30pm; Tue: 9am‑5.30pm; Wed: 9am‑5.30pm; Thu: 9am‑8pm; Fri: 9am‑5.30pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/toowong-library"
+  },
+  {
+    "name": "West End Library",
+    "lat": -27.482419,
+    "lng": 153.011858,
+    "address": "178‑180 Boundary St, West End",
+    "hours": "Mon: 9am‑1pm; Tue: 1pm‑5pm; Wed: 10am‑5pm; Thu: 10am‑7pm; Fri: 10am‑5pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Limited – phone for info",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/west-end-library"
+  },
+  {
+    "name": "Wynnum Library",
+    "lat": -27.44497,
+    "lng": 153.171656,
+    "address": "145 Florence St, Wynnum",
+    "hours": "Mon: 9am‑6pm; Tue: 9am‑6pm; Wed: 9am‑6pm; Thu: 9am‑8pm; Fri: 9am‑6pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "Yes",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/wynnum-library"
+  },
+  {
+    "name": "Zillmere Library",
+    "lat": -27.360039,
+    "lng": 153.040736,
+    "address": "Cnr Jennings St & Zillmere Rd, Zillmere",
+    "hours": "Mon: closed; Tue: 10am‑6pm; Wed: 12 noon‑5pm; Thu: 10am‑6pm; Fri: 10am‑5pm; Sat: 9am‑4pm; Sun: closed; Public holidays: closed",
+    "wheelchair_accessible": "Yes",
+    "meeting_rooms": "No",
+    "website": "https://www.brisbane.qld.gov.au/libraries-venues-and-facilities/libraries/library-locations/zillmere-library"
+  }
+]
+
+
